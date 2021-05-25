@@ -10,6 +10,11 @@ public class Main {
         Kenneth yo = new Kenneth();
         Liz madre = new Liz("Hola Kenneth");
 
+        madre.setAge();
+        int age = madre.getAge();
+
+        System.out.println("Chao Kenneth" + age + madre.getHobby());
+
 
 
     }
