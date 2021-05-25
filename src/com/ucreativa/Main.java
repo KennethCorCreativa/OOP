@@ -13,7 +13,9 @@ public class Main {
         madre.setAge();
         int age = madre.getAge();
 
-        System.out.println("Chao Kenneth" + age + madre.getHobby());
+        System.out.println("Chao Kenneth");
+        System.out.println("Mi edad es: " + age);
+        System.out.println("Hobby: " + madre.getHobby());
 
 
 
