@@ -5,9 +5,9 @@ public class Liz {
     private int age;
     private String hobby;
 
-    public Liz (String saludo){
-        this.age = 51;
-        this.hobby ="coser";
+    public Liz(String saludo, int age, String hobby){
+        this.age = age;
+        this.hobby = hobby;
 
         System.out.println(saludo);
     }
