@@ -30,8 +30,8 @@ public class Persona {
         return riesgo;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public void addYear(){
+        this.edad = this.edad+1;
     }
 
     public void setRiesgo(boolean riesgo) {
