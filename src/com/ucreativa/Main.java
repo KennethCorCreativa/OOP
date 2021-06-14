@@ -1,11 +1,8 @@
 package com.ucreativa;
 
-import com.ucreativa.familia.Kenneth;
-import com.ucreativa.familia.Liz;
-import com.ucreativa.vacunacion.Amigo;
-import com.ucreativa.vacunacion.BitacoraVacunas;
-import com.ucreativa.vacunacion.Familiar;
-import com.ucreativa.vacunacion.Persona;
+import com.ucreativa.vacunacion.entities.Amigo;
+import com.ucreativa.vacunacion.entities.BitacoraVacunas;
+import com.ucreativa.vacunacion.entities.Familiar;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -22,7 +19,7 @@ public class Main {
 
         Amigo compaTrabajo = new Amigo("Oscar","987", 26, false, "Compa Trabajo", "No se");
 
-        List<BitacoraVacunas> bitacora = new ArrayList<BitacoraVacunas>();
+        List<BitacoraVacunas> bitacora = new ArrayList<>();
         bitacora.add(new BitacoraVacunas(mama, "Pfizer", new Date()));
         bitacora.add(new BitacoraVacunas(hermana, "Astraceneca", new Date()));
         bitacora.add(new BitacoraVacunas(compaTrabajo,"Johnson", new Date()));
