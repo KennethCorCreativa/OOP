@@ -4,6 +4,7 @@ import com.ucreativa.vacunacion.entities.Amigo;
 import com.ucreativa.vacunacion.entities.BitacoraVacunas;
 import com.ucreativa.vacunacion.entities.Familiar;
 import com.ucreativa.vacunacion.entities.Persona;
+import com.ucreativa.vacunacion.repositories.FileRepository;
 import com.ucreativa.vacunacion.repositories.InMemoryRepository;
 import com.ucreativa.vacunacion.repositories.Repository;
 
@@ -19,7 +20,7 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
-        Repository repo = new InMemoryRepository();
+        Repository repo = new FileRepository();
 
         String nombre, cedula, edad, riesgo, isAmigo, relacion, facebook, parentesco, marca, print;
 

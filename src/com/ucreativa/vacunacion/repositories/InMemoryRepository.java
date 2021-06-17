@@ -18,7 +18,7 @@ public class InMemoryRepository implements Repository{
     }
 
     public void save(Persona persona, String marca, Date fecha){
-        this.db.add(new BitacoraVacunas(persona, marca, fecha);
+        this.db.add(new BitacoraVacunas(persona, marca, fecha));
 
     }
 
