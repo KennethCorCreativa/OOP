@@ -78,6 +78,9 @@ public class FrontEnd extends JFrame {
                 txtFacebook.setText("");
                 txtParentesco.setText("");
                 txtMarca.setText("");
+
+                String reporte = String.join("\n", service.get());
+                JOptionPane.showMessageDialog(((JButton)e.getSource()).getParent(), reporte);
             }
         });
 
