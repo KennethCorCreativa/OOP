@@ -18,7 +18,7 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
-        InMemoryRepository repo = new InMemoryRepository();
+        Repository repo = new InMemoryRepository();
 
         String nombre, cedula, edad, riesgo, isAmigo, relacion, facebook, parentesco, marca, print;
 
