@@ -1,6 +1,7 @@
 package com.ucreativa.vacunacion.entities;
+import com.ucreativa.vacunacion.services.ContadorRiesgo;
 
-public class Persona {
+public abstract class Persona {
 
     private String nombre;
     private String cedula;
@@ -12,7 +13,11 @@ public class Persona {
         this.cedula = cedula;
         this.edad = edad;
         this.riesgo = riesgo;
+        if (riesgo){
+            ContadorRiesgo.getInstance().SumarRiesgo();
+        }
     }
+    public abstract String toString();
 
     public String getNombre() {
         return nombre;
