@@ -12,10 +12,20 @@ public class Amigo extends Persona {
     }
 
     public String getRelacion() {
+
         return relacion;
     }
 
+    public void setRelacion()  {
+
+        String relacion;
+    }
+
     public String getFacebook() {
+
         return facebook;
+    }
+    public String toString(){
+        return super.getNombre();
     }
 }

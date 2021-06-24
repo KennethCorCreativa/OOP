@@ -10,7 +10,7 @@ import java.util.List;
 
 public class InMemoryRepository implements Repository{
 
-    private List<BitacoraVacunas> db;
+    private final List<BitacoraVacunas> db;
 
     public InMemoryRepository(){
         this.db = new ArrayList<>();
@@ -28,7 +28,7 @@ public class InMemoryRepository implements Repository{
         for (BitacoraVacunas item : db){
             lines.add(item.getPersona().getNombre()
                     + "  -  " + item.getMarca()
-                    + format.format(item.getFecha()));
+                    + " - " + format.format(item.getFecha()));
         }
         return lines;
     }
